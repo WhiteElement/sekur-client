@@ -68,4 +68,18 @@ public class ConfigReader
             }
         }
     }
+
+    public string ExtractArgument(string[] args, string wanted)
+    {
+        IEnumerable<string> filtered = args
+            .Where(x => x.Contains(wanted))
+            .ToArray();
+            
+        if (!filtered.Any())
+            throw new ArgumentException("No 'apiKey' provided");
+            
+        return filtered
+            .Single()
+            .Replace($"--{wanted}=", String.Empty);
+    }
 }

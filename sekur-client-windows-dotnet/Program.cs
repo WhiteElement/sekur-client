@@ -7,6 +7,8 @@ public class Program
     {
         string currentDir = AppDomain.CurrentDomain.BaseDirectory;
         ConfigReader configReader = new ConfigReader(currentDir);
+        string apiKey = configReader.ExtractArgument(args, "apiKey");
+        
         List<FileInfo> files = configReader.ReadFiles();
         List<DirectoryInfo> folders = configReader.ReadDirectories();
 
@@ -16,6 +18,6 @@ public class Program
 
         string? sekurServerUrl = configReader.GetEntry("sekur-server-url", true);
         SekurServerClient sekurServerClient = new SekurServerClient(sekurServerUrl!);
-        await sekurServerClient.SendContent(zipFileName);
+        await sekurServerClient.SendContent(zipFileName, apiKey);
     }
 }

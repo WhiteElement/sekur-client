@@ -2,3 +2,4 @@
 #
 # FILES TO BACK UP
 C:\notesdb
+C:\Users\manue\Downloads\Unbenanntes Diagramm.drawio-1.pdf
