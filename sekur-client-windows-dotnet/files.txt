@@ -1,0 +1,4 @@
+﻿# <- this is a comment
+#
+# FILES TO BACK UP
+C:\notesdb

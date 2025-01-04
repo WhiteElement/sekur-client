@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <sekur-server-url>http://localhost:2100</sekur-server-url>
+</Configuration>

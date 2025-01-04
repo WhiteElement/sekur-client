@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>sekur_client_windows_dotnet</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Ressources\files.txt" />
+      <None Remove="Ressources\folders.txt" />
+      <None Update="config.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <Content Include="files.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="folders.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="5.3.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="NLog.config" />
+      <EmbeddedResource Include="NLog.config" />
+    </ItemGroup>
+
+</Project>
