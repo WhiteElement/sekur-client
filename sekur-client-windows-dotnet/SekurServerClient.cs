@@ -18,7 +18,7 @@ public class SekurServerClient
     {
         MultipartFormDataContent content = PrepareContent(zipFileName.FullName);
         _client.DefaultRequestHeaders.Add("apiKey", apiKey);
-        const string path = "archive?device=laptop";
+        const string path = "archive";
         
         HttpResponseMessage response = await _client.PostAsync(path, content);
         if (!response.IsSuccessStatusCode)
