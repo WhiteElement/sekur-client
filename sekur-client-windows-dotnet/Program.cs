@@ -1,5 +1,4 @@
-﻿// TODO schauen ob AOT compilation geht
-namespace sekur_client_windows_dotnet;
+﻿namespace sekur_client_windows_dotnet;
 
 public class Program
 {

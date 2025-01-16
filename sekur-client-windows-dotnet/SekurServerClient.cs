@@ -11,7 +11,7 @@ public class SekurServerClient
     public SekurServerClient(string sekurServerUrl)
     {
         _client = new HttpClient();
-        _client.BaseAddress = new Uri(sekurServerUrl!);
+        _client.BaseAddress = new Uri(sekurServerUrl);
     }
 
     public async Task SendContent(FileInfo zipFileName, string apiKey)

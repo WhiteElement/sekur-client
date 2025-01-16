@@ -1,1 +1,4 @@
-﻿C:\Notes
+﻿# <- this is a comment
+#
+# FOLDERS TO BACK UP
+C:\Notizen

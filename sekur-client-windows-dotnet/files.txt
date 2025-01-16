@@ -1,5 +1,5 @@
 ﻿# <- this is a comment
 #
 # FILES TO BACK UP
-C:\notesdb
-C:\Users\manue\Downloads\Unbenanntes Diagramm.drawio-1.pdf
+C:\randomfile.txt
+C:\Users\user\Downloads\randomfile.pdf
