@@ -55,7 +55,7 @@ public class ConfigReader
     private static void LoadNLogConfiguration()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        const string resourceName = "sekur_client_windows_dotnet.NLog.config"; // Adjust to match your namespace and file name
+        const string resourceName = "sekur_client_windows_dotnet.NLog.config";
 
         using (Stream stream = assembly.GetManifestResourceStream(resourceName))
         {
